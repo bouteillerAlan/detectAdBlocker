@@ -17,3 +17,19 @@ function init() {
     })
 }
 ```
+
+## how it works
+
+The function make a fetch to a specific url : ``https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js``; if the fetch is not ok an adsblocker is enabled.
+
+For example ``uBlock Origin`` detect this url like this : 
+
+>uBlock₀ prevented the loading of the following page:
+>
+>``https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js``
+>
+>Because of the following filter:
+>
+>``||googlesyndication.com^``
+
+This filter comes from [Peter Lowe’s Ad and tracking server list](https://pgl.yoyo.org/adservers/)
